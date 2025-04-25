@@ -6,52 +6,30 @@
   <style>
     body {
       margin: 0;
-      background: #fafafa;
       font-family: sans-serif;
-      text-align: center;
+      background-color: #fafafa;
     }
     header {
       background-color: #2e266c;
       padding: 1rem;
+      text-align: center;
     }
     header img {
       max-height: 80px;
       border-radius: 50%;
     }
-    #flipbookContainer {
-      width: 90%;
-      margin: 2rem auto;
-      max-width: 1000px;
+    iframe {
+      width: 100%;
+      height: calc(100vh - 100px);
+      border: none;
     }
   </style>
-  <!-- ✅ Estilo del FlipBook -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nodlik/3dflipbook/css/flipbook.style.css">
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Berry Chill Logo">
   </header>
 
-  <div id="flipbookContainer"></div>
-
-  <!-- ✅ jQuery primero -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <!-- ✅ Librerías de FlipBook -->
-  <script src="https://cdn.jsdelivr.net/npm/@nodlik/3dflipbook/js/libs/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@nodlik/3dflipbook/js/flipbook.min.js"></script>
-
-  <!-- ✅ Inicializar el FlipBook -->
-  <script>
-    $('#flipbookContainer').FlipBook({
-      pdf: 'menu.pdf',
-      template: {
-        html: 'https://cdn.jsdelivr.net/npm/@nodlik/3dflipbook/template/default-book-view.html',
-        styles: ['https://cdn.jsdelivr.net/npm/@nodlik/3dflipbook/template/default-book-view.css'],
-        links: [],
-        script: []
-      }
-    });
-  </script>
+  <iframe src="menu.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
 </body>
 </html>
