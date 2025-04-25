@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Berry Chill - Menú Digital</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipbook-vue@latest/dist/flipbook.min.css">
+  <style>
+    body {
+      margin: 0;
+      background: #fafafa;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      background-color: #2e266c;
+      padding: 1rem;
+    }
+    header img {
+      max-height: 80px;
+      border-radius: 50%;
+    }
+    #flipbook-container {
+      width: 90%;
+      margin: 2rem auto;
+      max-width: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Berry Chill Logo">
+  </header>
+  <div id="flipbook-container">
+    <flip-book pdf="menu.pdf"></flip-book>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flipbook-vue@latest"></script>
+  <script>
+    new Vue({ el: '#flipbook-container' });
+  </script>
+</body>
+</html>
