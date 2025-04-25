@@ -24,6 +24,7 @@
       max-width: 1000px;
     }
   </style>
+  <!-- ✅ Estilo del FlipBook -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nodlik/3dflipbook/css/flipbook.style.css">
 </head>
 <body>
@@ -33,10 +34,14 @@
 
   <div id="flipbookContainer"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@nodlik/3dflipbook/js/libs/jquery.min.js"></script>
+  <!-- ✅ jQuery primero -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- ✅ Librerías de FlipBook -->
   <script src="https://cdn.jsdelivr.net/npm/@nodlik/3dflipbook/js/libs/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@nodlik/3dflipbook/js/flipbook.min.js"></script>
 
+  <!-- ✅ Inicializar el FlipBook -->
   <script>
     $('#flipbookContainer').FlipBook({
       pdf: 'menu.pdf',
